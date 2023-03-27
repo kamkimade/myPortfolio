@@ -8,16 +8,29 @@ body {
   background-color: var(--bg-color);
 }
 
-.heading__wrapper, .wrapper {
+.btn {
+  outline: 1px solid var(--primary-color);
+}
+
+.heading-wrapper, .wrapper {
+  margin: 0 auto;
   padding: 0 15px;
 }
 
-.heading__wrapper {
+.heading-wrapper {
   max-width: 1310px;
 }
 
 .wrapper {
   max-width: 1090px;
+}
+
+.section-offset {
+  margin-bottom: 120px;
+}
+
+.flex {
+  display: flex;
 }
 
 .main-title {

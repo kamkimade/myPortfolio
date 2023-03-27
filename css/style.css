@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa Regular"), local("Comfortaa-Regular"), url("../fonts/Comfortaa-Regular.woff2") format("woff2"), url("../fonts/Comfortaa-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Comfortaa", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+.btn {
+  outline: 1px solid var(--primary-color);
+}
+
+.heading-wrapper, .wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heading-wrapper {
+  max-width: 1310px;
+}
+
+.wrapper {
+  max-width: 1090px;
+}
+
+.section-offset {
+  margin-bottom: 120px;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-title {
+  font-size: 56px;
+  line-height: 114%;
+  letter-spacing: 0.56px;
+}
+
+.title {
+  font-size: 45px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 1.44px;
+}
+
+.subtitle {
+  text-align: center;
+  letter-spacing: 1.44px;
+}
+
+.font-marker .subtitle {
+  font-size: 18px;
+  line-height: 178%;
+  text-transform: uppercase;
+}
+
+.font-descr {
+  font-size: 23px;
+  line-height: 139%;
+  letter-spacing: 0.48px;
+}
+
+.header__innner {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  width: 330px;
+}
+.header__btn {
+  cursor: pointer;
+  padding: 9px 26px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.logo__img {
+  margin-right: 13px;
+  width: 32px;
+  height: 32px;
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger {
+  width: 32px;
+  height: 32px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.burger__line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+.hero__content {
+  max-width: 52%;
+}
+.hero__imgs {
+  background-color: #fff;
+  width: 543px;
+  height: 543px;
+  border-radius: 50%;
+  outline: 1px solid red;
+  overflow: hidden;
+  position: relative;
+}
+.hero__img-bg {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.hero__img-hero {
+  filter: grayscale(1);
+  position: absolute;
+  width: 83%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -36%);
+  z-index: 10;
+}/*# sourceMappingURL=style.css.map */

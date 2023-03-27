@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px) {
+  .header__nav, .header__btn {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}/*# sourceMappingURL=media.css.map */
