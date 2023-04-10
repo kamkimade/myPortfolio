@@ -44,11 +44,15 @@ $(document).ready(() => {
   }
 
   function toggleClassElem() {
+    $('.burger__line-top').toggleClass('active-top')
+    $('.burger__line-bottom').toggleClass('active-bottom')
+    $('.burger__line-center').toggleClass('active-center')
     body.toggleClass('active-overflow')
     navigation.toggleClass('active-display')
   }
 
   burger.on('click', function () {
+
     toggleClassElem();
   })
   

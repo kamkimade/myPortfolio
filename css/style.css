@@ -277,11 +277,16 @@ body {
   align-items: center;
 }
 .header__nav {
-  width: 330px;
+  min-width: 300px;
 }
 .header__btn {
   cursor: pointer;
   padding: 9px 26px;
+}
+.header__contacts {
+  display: flex;
+  gap: 30px;
+  padding-left: 30px;
 }
 
 .logo {
@@ -311,7 +316,34 @@ body {
 }
 .contacts__tel {
   margin-right: 30px;
+  position: relative;
 }
+.contacts__tel::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-image: url("/img/phone.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contacts__email {
+  position: relative;
+}
+.contacts__email::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-image: url("/img/email.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .burger {
   width: 32px;
   height: 32px;
@@ -746,6 +778,13 @@ body {
   cursor: pointer;
   fill: var(--accent-color);
   transition: fill 0.3s ease;
+}
+.svg-icon--dark {
+  fill: var(--primary-color);
+  transition: fill 0.3s ease;
+}
+.svg-icon--dark:hover {
+  fill: var(--gray-color);
 }
 .svg-icon:hover {
   fill: var(--gray-color);

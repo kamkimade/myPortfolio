@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>Ким Адольф | Портфолио</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/media.css" />
-    <script src="/js/jQuery v3.6.4 .min.js"></script>
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/reset.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/media.min.css">
+    <script src="/js/jquery3.6.4.min.js"></script>
     <script src="/js/script.js"></script>
   </head>
 
@@ -23,14 +23,11 @@
             src="/img/sun.svg"
             alt="logo"
             title="логотип"
-          />
+          >
           kim.
         </a>
-        <nav class="header__nav nav scrollto">
+        <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#"> Главная </a>
-            </li>
             <li class="nav__item">
               <a class="nav__link" href="#about"> Обо мне </a>
             </li>
@@ -46,6 +43,76 @@
           <a class="contacts__link contacts__email" href="mailto:adolf.kim@inbox.ru">
             adolf.kim@inbox.ru
           </a>
+        </div>
+        <div class="header__socials">
+          <ul class="social flex">
+            <li class="social__item">
+              <a href="https://vk.com/id26365200" title="vk" target="_blank">
+                <svg
+                class="svg-icon--dark"
+                fill="none"
+                width="32px"
+                height="32px"
+                viewBox="0 0 32 32"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.217 22.402h-2.179c-0.825 0-1.080-0.656-2.562-2.158-1.291-1.25-1.862-1.418-2.179-1.418-0.445 0-0.572 0.127-0.572 0.741v1.968c0 0.53-0.169 0.847-1.566 0.847-2.818-0.189-5.24-1.726-6.646-3.966l-0.021-0.035c-1.632-2.027-2.835-4.47-3.43-7.142l-0.022-0.117c0-0.317 0.127-0.614 0.741-0.614h2.179c0.55 0 0.762 0.254 0.975 0.846 1.078 3.112 2.878 5.842 3.619 5.842 0.275 0 0.402-0.127 0.402-0.825v-3.219c-0.085-1.482-0.868-1.608-0.868-2.137 0.009-0.283 0.241-0.509 0.525-0.509 0.009 0 0.017 0 0.026 0.001l-0.001-0h3.429c0.466 0 0.635 0.254 0.635 0.804v4.34c0 0.465 0.212 0.635 0.339 0.635 0.275 0 0.509-0.17 1.016-0.677 1.054-1.287 1.955-2.759 2.642-4.346l0.046-0.12c0.145-0.363 0.493-0.615 0.9-0.615 0.019 0 0.037 0.001 0.056 0.002l-0.003-0h2.179c0.656 0 0.805 0.337 0.656 0.804-0.874 1.925-1.856 3.579-2.994 5.111l0.052-0.074c-0.232 0.381-0.317 0.55 0 0.975 0.232 0.317 0.995 0.973 1.503 1.566 0.735 0.727 1.351 1.573 1.816 2.507l0.025 0.055c0.212 0.612-0.106 0.93-0.72 0.93zM20.604 1.004h-9.207c-8.403 0-10.392 1.989-10.392 10.392v9.207c0 8.403 1.989 10.392 10.392 10.392h9.207c8.403 0 10.392-1.989 10.392-10.392v-9.207c0-8.403-2.011-10.392-10.392-10.392z"
+                ></path>
+              </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/adolf_kim" title="telegram" target="_blank">
+                <svg
+                class="svg-icon--dark"
+                width="32px"
+                height="32px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12.3583 9.38244C11.3857 9.787 9.44177 10.6243 6.52657 11.8944C6.05318 12.0827 5.8052 12.2669 5.78263 12.4469C5.74448 12.7513 6.12559 12.8711 6.64455 13.0343C6.71515 13.0565 6.78829 13.0795 6.86327 13.1038C7.37385 13.2698 8.06068 13.464 8.41773 13.4717C8.74161 13.4787 9.1031 13.3452 9.50219 13.0711C12.226 11.2325 13.632 10.3032 13.7202 10.2831C13.7825 10.269 13.8688 10.2512 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9738 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4246 12.9759 11.2534 13.135 11.2184 13.1714C11.14 13.2528 11.0601 13.3298 10.9833 13.4038C10.509 13.8611 10.1532 14.204 11.003 14.764C11.4114 15.0331 11.7381 15.2556 12.0641 15.4776C12.4201 15.7201 12.7752 15.9619 13.2347 16.2631C13.3517 16.3398 13.4635 16.4195 13.5724 16.4971C13.9867 16.7925 14.3589 17.0579 14.8188 17.0155C15.086 16.991 15.362 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.382 16.6352 8.80081C16.6484 8.66228 16.6318 8.48498 16.6185 8.40715C16.6051 8.32932 16.5773 8.21842 16.4761 8.13633C16.3563 8.03911 16.1714 8.01861 16.0886 8.02C15.7125 8.0267 15.1354 8.22735 12.3583 9.38244Z"
+                />
+              </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://github.com/kamkimade" title="github" target="_blank">
+                <svg
+                class="svg-icon--dark"
+                fill="none"
+                height="32px"
+                width="32px"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+              >
+                <g id="social-github">
+                  <path
+                    d="M22.4,6c-1.1-1.8-2.5-3.3-4.4-4.4C16.2,0.5,14.2,0,12,0C9.8,0,7.8,0.5,6,1.6C4.1,2.7,2.7,4.1,1.6,6C0.5,7.8,0,9.8,0,12
+                    c0,2.6,0.8,5,2.3,7.1c1.5,2.1,3.5,3.5,5.9,4.3c0.3,0.1,0.5,0,0.6-0.1C9,23.2,9,23,9,22.8c0,0,0-0.3,0-0.8c0-0.5,0-1,0-1.4l-0.4,0.1
+                    c-0.2,0-0.5,0.1-0.9,0.1c-0.3,0-0.7,0-1.1-0.1c-0.4-0.1-0.7-0.2-1-0.5c-0.3-0.2-0.6-0.6-0.7-1l-0.2-0.4c-0.1-0.2-0.3-0.5-0.5-0.8
+                    c-0.2-0.3-0.5-0.5-0.7-0.6l-0.1-0.1c-0.1-0.1-0.1-0.1-0.2-0.2c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2c0.1,0,0.2-0.1,0.5-0.1
+                    l0.3,0c0.2,0,0.5,0.2,0.8,0.4c0.3,0.2,0.6,0.5,0.8,0.8c0.2,0.4,0.5,0.8,0.9,1c0.3,0.2,0.7,0.3,1,0.3c0.3,0,0.6,0,0.9-0.1
+                    C8.6,19.1,8.8,19,9,18.9c0.1-0.7,0.3-1.2,0.8-1.6c-0.6-0.1-1.1-0.2-1.6-0.3c-0.5-0.1-1-0.3-1.5-0.6c-0.5-0.3-0.9-0.6-1.3-1
+                    c-0.3-0.4-0.6-1-0.8-1.6c-0.2-0.7-0.3-1.5-0.3-2.3c0-1.3,0.4-2.3,1.2-3.2C5.2,7.2,5.2,6.1,5.7,5C6,4.9,6.4,4.9,7,5.2
+                    c0.6,0.2,1,0.4,1.3,0.6C8.6,5.9,8.8,6.1,9,6.2c1-0.3,2-0.4,3-0.4s2,0.1,3,0.4l0.6-0.4C16,5.6,16.5,5.3,17,5.1
+                    c0.6-0.2,1-0.3,1.3-0.2c0.5,1.2,0.5,2.2,0.1,3.2c0.8,0.9,1.2,2,1.2,3.2c0,0.9-0.1,1.7-0.3,2.4c-0.2,0.7-0.5,1.2-0.8,1.6
+                    c-0.3,0.4-0.8,0.8-1.3,1c-0.5,0.3-1,0.5-1.5,0.6c-0.5,0.1-1,0.2-1.6,0.3c0.5,0.5,0.8,1.2,0.8,2.2v3.3c0,0.2,0.1,0.3,0.2,0.5
+                    c0.1,0.1,0.3,0.2,0.6,0.1c2.4-0.8,4.4-2.2,5.9-4.3C23.2,17,24,14.6,24,12C24,9.8,23.5,7.8,22.4,6z"
+                  />
+                </g>
+              </svg>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <!-- burger -->
@@ -66,15 +133,15 @@
             <div class="hero__content">
               <div class="hero__wrapper">
                 <h1 class="hero__title title">
-                  Привет,<br />
-                  я Ким Адольф<br />
+                  Привет,<br>
+                  я Ким Адольф<br>
                   <span>Frontend</span> - разработчик
                 </h1>
                 <div class="hero__subtitle">
                   Страницы
-                  <img src="/img/sun-ico.svg" alt="" class="" />
+                  <img src="/img/sun-ico.svg" alt="" class="">
                   Приложения
-                  <img src="/img/sun-ico.svg" alt="" class="" />
+                  <img src="/img/sun-ico.svg" alt="" class="">
                   Marketplace
                 </div>
                 <div class="hero__contacts contacts">
@@ -93,60 +160,61 @@
                 src="/img/asterisk.webp"
                 alt="задний фон"
                 loading="lazy"
-              />
+              >
               <img
                 class="hero__img-hero"
                 src="/img/hero.webp"
                 alt="Ким Адольф"
                 loading="lazy"
-              />
+              >
             </div>
           </div>
           <div class="hero__anim-text">
             <aside class="ticker">
               <ul class="ticker__list">
                 <li class="ticker__item">
-                  Верстка&nbsp;страниц&nbsp;<img
+                  Верстка&nbsp;страниц&nbsp;
+                  <img
                     src="/img/sun-ico.svg"
                     alt=""
-                  />
+                  >
                 </li>
                 <li class="ticker__item">
                   Web&nbsp;приложение&nbsp;
-                  <img src="/img/sun-ico.svg" alt="" />
+                  <img src="/img/sun-ico.svg" alt="">
                 </li>
                 <li class="ticker__item">
-                  Marketplace&nbsp; <img src="/img/sun-ico.svg" alt="" />
+                  Marketplace&nbsp; <img src="/img/sun-ico.svg" alt="">
                 </li>
                 <li class="ticker__item">
                   SPA&nbsp;приложение&nbsp;
-                  <img src="/img/sun-ico.svg" alt="" />
+                  <img src="/img/sun-ico.svg" alt="">
                 </li>
                 <li class="ticker__item">
                   Landing&nbsp;страница&nbsp;
-                  <img src="/img/sun-ico.svg" alt="" />
+                  <img src="/img/sun-ico.svg" alt="">
                 </li>
-                <!-- ---- -->
                 <li class="ticker__item">
-                  Верстка&nbsp;страниц&nbsp;<img
+                  Верстка&nbsp;страниц&nbsp;
+                  <img
                     src="/img/sun-ico.svg"
                     alt=""
-                  />
+                  >
                 </li>
                 <li class="ticker__item">
                   Web&nbsp;приложение&nbsp;
-                  <img src="/img/sun-ico.svg" alt="" />
+                  <img src="/img/sun-ico.svg" alt="">
                 </li>
                 <li class="ticker__item">
-                  Marketplace&nbsp; <img src="/img/sun-ico.svg" alt="" />
+                  Marketplace&nbsp; <img src="/img/sun-ico.svg" alt="">
                 </li>
                 <li class="ticker__item">
                   SPA&nbsp;приложение&nbsp;
-                  <img src="/img/sun-ico.svg" alt="" />
+                  <img src="/img/sun-ico.svg" alt="">
                 </li>
                 <li class="ticker__item">
                   Landing&nbsp;страница&nbsp;
-                  <img src="/img/sun-ico.svg" alt="" />
+                  <img src="/img/sun-ico.svg" alt="">
                 </li>
               </ul>
             </aside>
@@ -155,21 +223,21 @@
       </section>
       <section class="about" id="about">
         <div class="about__inner wrapper section-offset">
-          <img class="sun-logo" src="/img/sun.svg" alt="sun picture" />
+          <img class="sun-logo" src="/img/sun.svg" alt="sun picture">
           <h2 class="about__title title">Обо мне</h2>
           <p class="about__subtitle subtitle">Краткая инормация</p>
           <div class="about__block flex">
             <div class="about__descr">
               <div class="about__name">
                 Ким
-                <img src="/img/sun-ico.svg" alt="icon" />
+                <img src="/img/sun-ico.svg" alt="icon">
                 Адольф
               </div>
               <h3 class="about__spec main-title">Верстка и WEB приложениe</h3>
             </div>
             <div class="about__content">
               <p class="about__me">
-                <img src="/img/sun-ico.svg" alt="icon" />
+                <img src="/img/sun-ico.svg" alt="icon">
                 Привет, я&nbsp;Адольф. Специалист по&nbsp;верстке и
                 Web&nbsp;разработке страниц и приложении.
               </p>
@@ -204,7 +272,7 @@
       </section>
       <section class="skills">
         <div class="skills__inner wrapper section-offset">
-          <img class="sun-logo" src="/img/sun.svg" alt="sun picture" />
+          <img class="sun-logo" src="/img/sun.svg" alt="sun picture">
           <h2 class="skills__title title">Мои навыки</h2>
           <p class="skills__subtitle subtitle">
             It языки, инструменты которыми владею
@@ -226,7 +294,6 @@
               </p>
             </div>
             <div class="skills__img">
-              <!--  -->
               <div class="skills__progress">
                 <div class="skills__progress-bar">
                   <div class="skills__progress-html"></div>
@@ -238,7 +305,6 @@
                   <div class="skills__progress-js"></div>
                 </div>
               </div>
-              <!--  -->
             </div>
           </div>
           <div class="skills__wrapper flex skills__wrapper--reverse">
@@ -288,28 +354,28 @@
           <div class="skills__tools">
             <ul class="skills__tools-list">
               <li class="skills__tools-item">
-                <img src="/img/sass.svg" alt="scss препроцессор" class="" />
+                <img src="/img/sass.svg" alt="scss препроцессор" class="">
               </li>
               <li class="skills__tools-item">
-                <img src="/img/gulp-logo.svg" alt="gulp задачник" class="" />
+                <img src="/img/gulp-logo.svg" alt="gulp задачник" class="">
               </li>
               <li class="skills__tools-item">
-                <img src="/img/git.webp" alt="git система контроля версии" class="" />
+                <img src="/img/git.webp" alt="git система контроля версии" class="">
               </li>
               <li class="skills__tools-item">
-                <img src="/img/webpack.webp" alt="webpack сборщик" class="" />
+                <img src="/img/webpack.webp" alt="webpack сборщик" class="">
               </li>
               <li class="skills__tools-item">
-                <img src="/img/jquery.webp" alt="jquery библиотека" class="" />
+                <img src="/img/jquery.webp" alt="jquery библиотека" class="">
               </li>
               <li class="skills__tools-item">
-                <img src="/img/bootstrap.webp" alt="bootstrap библиотека" />
+                <img src="/img/bootstrap.webp" alt="bootstrap библиотека">
               </li>
               <li class="skills__tools-item">
-                <img src="/img/vuejs.webp" alt="vue библиотека" />
+                <img src="/img/vuejs.webp" alt="vue библиотека">
               </li>
               <li class="skills__tools-item">
-                <img src="/img/figma.webp" alt="figma инструмент" />
+                <img src="/img/figma.webp" alt="figma инструмент">
               </li>
               <li>
                 <button class="skills__btn btn--dark">еще</button>
@@ -320,7 +386,7 @@
       </section>
       <section class="portfolio" id="portfolio">
         <div class="portfolio__inner wrapper section-offset">
-          <img class="sun-logo" src="/img/sun.svg" alt="sun picture" />
+          <img class="sun-logo" src="/img/sun.svg" alt="sun picture">
           <h2 class="portfolio__title title">Портфолио</h2>
           <p class="portfolio__subtitle subtitle">
             Здесь собраны примеры работ моих возможностей и не только
@@ -335,7 +401,7 @@
                         class="img-block"
                         src="/img/fashion.webp"
                         alt="картинка fashion сайта"
-                      />
+                      >
                     </div>
 
                     <div class="portfolio-block__content">
@@ -367,7 +433,7 @@
                         class="img-block"
                         src="/img/plants-test.webp"
                         alt="скриншот plants страницы"
-                      />
+                      >
                     </div>
                     <div class="portfolio-block__content">
                       <p class="portfolio-block__tool">Адаптивная страница</p>
@@ -396,7 +462,7 @@
                         src="/img/travel.webp"
                         alt="скриншот plants страницы"
                         data-video="true"
-                      />
+                      >
                     </div>
                     <div class="portfolio-block__content">
                       <p class="portfolio-block__tool">Анимационная страница</p>
@@ -425,7 +491,7 @@
         <aside class="modal-picture" style="display: none">
           <div class="modal-picture__wrapper">
             <div class="modal-picture__top">
-              <h3 class="modal-picture__title"></h3>
+              <h3 class="modal-picture__title">Title</h3>
               <svg
                 class="modal-picture__cross cross-icon"
                 fill="none"
@@ -450,10 +516,9 @@
               </svg>
             </div>
             <div class="modal-picture__img">
-              <img src="/" alt="" loading="lazy" />
+              <img src="/" alt="" loading="lazy">
               <video
                 class="modal-picture__video"
-                src=""
                 controls="controls"
                 autoplay="autoplay"
               ></video>
@@ -466,24 +531,21 @@
             </p>
           </div>
         </aside>
-        <!-- end modal -->
+        <!-- end popup -->
       </section>
     </main>
     <footer class="footer">
       <div class="footer__inner wrapper flex">
         <div class="footer__top flex">
-          <img src="/img/sun.svg" alt="logo" class="icon" />
+          <img src="/img/sun.svg" alt="logo" class="icon">
           <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Главная</a>
-            </li>
             <li class="footer__item">
               <a href="#about" class="footer__link">Обо&nbsp;мне</a>
             </li>
             <li class="footer__item">
               <a href="#portfolio" class="footer__link">Портфолио</a>
             </li>
-            <li class="footer__item footer-contacts">
+            <li class="footer__item footer-contacts contacts">
                 <a class="contacts__link contacts__tel" href="tel:+79191480751">
                   +7(919)148-07-51
                 </a>
@@ -497,7 +559,8 @@
           <span class="copy">&copy; 2023 Все авторские права защищены</span>
           <ul class="social flex">
             <li class="social__item">
-              <svg
+              <a href="https://vk.com/id26365200" title="vk" target="_blank">
+                <svg
                 class="svg-icon"
                 fill="none"
                 width="32px"
@@ -506,14 +569,15 @@
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>vk</title>
                 <path
                   d="M25.217 22.402h-2.179c-0.825 0-1.080-0.656-2.562-2.158-1.291-1.25-1.862-1.418-2.179-1.418-0.445 0-0.572 0.127-0.572 0.741v1.968c0 0.53-0.169 0.847-1.566 0.847-2.818-0.189-5.24-1.726-6.646-3.966l-0.021-0.035c-1.632-2.027-2.835-4.47-3.43-7.142l-0.022-0.117c0-0.317 0.127-0.614 0.741-0.614h2.179c0.55 0 0.762 0.254 0.975 0.846 1.078 3.112 2.878 5.842 3.619 5.842 0.275 0 0.402-0.127 0.402-0.825v-3.219c-0.085-1.482-0.868-1.608-0.868-2.137 0.009-0.283 0.241-0.509 0.525-0.509 0.009 0 0.017 0 0.026 0.001l-0.001-0h3.429c0.466 0 0.635 0.254 0.635 0.804v4.34c0 0.465 0.212 0.635 0.339 0.635 0.275 0 0.509-0.17 1.016-0.677 1.054-1.287 1.955-2.759 2.642-4.346l0.046-0.12c0.145-0.363 0.493-0.615 0.9-0.615 0.019 0 0.037 0.001 0.056 0.002l-0.003-0h2.179c0.656 0 0.805 0.337 0.656 0.804-0.874 1.925-1.856 3.579-2.994 5.111l0.052-0.074c-0.232 0.381-0.317 0.55 0 0.975 0.232 0.317 0.995 0.973 1.503 1.566 0.735 0.727 1.351 1.573 1.816 2.507l0.025 0.055c0.212 0.612-0.106 0.93-0.72 0.93zM20.604 1.004h-9.207c-8.403 0-10.392 1.989-10.392 10.392v9.207c0 8.403 1.989 10.392 10.392 10.392h9.207c8.403 0 10.392-1.989 10.392-10.392v-9.207c0-8.403-2.011-10.392-10.392-10.392z"
                 ></path>
               </svg>
+              </a>
             </li>
             <li class="social__item">
-              <svg
+              <a href="https://t.me/adolf_kim" title="telegram" target="_blank">
+                <svg
                 class="svg-icon"
                 width="32px"
                 height="32px"
@@ -521,16 +585,17 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>telegram</title>
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12.3583 9.38244C11.3857 9.787 9.44177 10.6243 6.52657 11.8944C6.05318 12.0827 5.8052 12.2669 5.78263 12.4469C5.74448 12.7513 6.12559 12.8711 6.64455 13.0343C6.71515 13.0565 6.78829 13.0795 6.86327 13.1038C7.37385 13.2698 8.06068 13.464 8.41773 13.4717C8.74161 13.4787 9.1031 13.3452 9.50219 13.0711C12.226 11.2325 13.632 10.3032 13.7202 10.2831C13.7825 10.269 13.8688 10.2512 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9738 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4246 12.9759 11.2534 13.135 11.2184 13.1714C11.14 13.2528 11.0601 13.3298 10.9833 13.4038C10.509 13.8611 10.1532 14.204 11.003 14.764C11.4114 15.0331 11.7381 15.2556 12.0641 15.4776C12.4201 15.7201 12.7752 15.9619 13.2347 16.2631C13.3517 16.3398 13.4635 16.4195 13.5724 16.4971C13.9867 16.7925 14.3589 17.0579 14.8188 17.0155C15.086 16.991 15.362 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.382 16.6352 8.80081C16.6484 8.66228 16.6318 8.48498 16.6185 8.40715C16.6051 8.32932 16.5773 8.21842 16.4761 8.13633C16.3563 8.03911 16.1714 8.01861 16.0886 8.02C15.7125 8.0267 15.1354 8.22735 12.3583 9.38244Z"
                 />
               </svg>
+              </a>
             </li>
             <li class="social__item">
-              <svg
+              <a href="https://github.com/kamkimade" title="github" target="_blank">
+                <svg
                 class="svg-icon"
                 fill="none"
                 height="32px"
@@ -541,7 +606,6 @@
                 viewBox="0 0 24 24"
                 xml:space="preserve"
               >
-                <title>github</title>
                 <g id="social-github">
                   <path
                     d="M22.4,6c-1.1-1.8-2.5-3.3-4.4-4.4C16.2,0.5,14.2,0,12,0C9.8,0,7.8,0.5,6,1.6C4.1,2.7,2.7,4.1,1.6,6C0.5,7.8,0,9.8,0,12
@@ -558,6 +622,7 @@
                   />
                 </g>
               </svg>
+              </a>
             </li>
           </ul>
         </div>
