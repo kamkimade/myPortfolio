@@ -6,14 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #161513;
-  --dark-color: #131416;
-  --bg-color: #F2F1EF;
-  --accent-color: #E94D35;
-  --gray-color: #E6E3DE;
-}
-
 img {
   max-width: 100%;
 }
@@ -23,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-input, button  {
+input, button, textarea  {
   background: none;
   border: none;
   outline: none;

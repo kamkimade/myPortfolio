@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #161513;
+  --dark-color: #131416;
+  --bg-color: #F2F1EF;
+  --accent-color: #E94D35;
+  --gray-color: #E6E3DE;
+}
+
 body {
   font-family: 'Comfortaa', serif;
   font-style: normal;
@@ -8,8 +16,45 @@ body {
   background-color: var(--bg-color);
 }
 
+.lock {
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: brightness(0.2);
+    z-index: 20;
+  }
+}
+
+.img-block {
+  cursor: pointer;
+}
+
 .btn {
+  cursor: pointer;
   outline: 1px solid var(--primary-color);
+  transition: all .3s ease;
+  &:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+}
+
+.btn--dark {
+  cursor: pointer;
+  margin-right: -5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  outline: 1px solid var(--primary-color);
+  transition: all .3s ease;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 .heading-wrapper, .wrapper {
@@ -33,6 +78,11 @@ body {
   display: flex;
 }
 
+.position-center {
+  align-items: center;
+  justify-content: center;
+}
+
 .main-title {
   font-size: 56px;
   line-height: 114%;
@@ -40,6 +90,7 @@ body {
 }
 
 .title {
+  margin-bottom: 17px;
   font-size: 45px;
   line-height: 124%;
   text-align: center;
@@ -47,19 +98,96 @@ body {
 }
 
 .subtitle {
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 32px;
   text-align: center;
   letter-spacing: 1.44px;
-}
-
-
-.font-marker .subtitle {
-  font-size: 18px;
-  line-height: 178%;
   text-transform: uppercase;
 }
 
-.font-descr {
-  font-size: 23px;
-  line-height: 139%;
-  letter-spacing: 0.48px;
+.sun-logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.active-display {
+  display: block !important;
+}
+
+.active-overflow {
+  overflow: hidden;
+}
+
+
+
+@keyframes ticker {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes flicker {
+  0% {
+    color: #fff;
+  }
+  49% {
+    color: #fff;
+  }
+  50% {
+    color: var(--accent-color);
+  }
+  99% {
+    color: var(--accent-color);
+  }
+  100% {
+    color: #fff;
+
+  }
+}
+@keyframes flicker-dark {
+  0% {
+    color: #000;
+  }
+  49% {
+    color: #000;
+  }
+  50% {
+    color: #fff;
+  }
+  99% {
+    color: #fff;
+
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    width: 100%;
+  }
+  10% {
+    width: 100%;
+  }
+  90% {
+    width: 30%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes rotateElem {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
